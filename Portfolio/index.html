@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/index.css">
+    <title>Reagan Msangia</title>
+</head>
+<body>
+    <header>
+        
+              <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <!-- Home content goes here -->
+         <style>
+                #welcome-message {
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+            </style>
+                <div id="welcome-message"></div>
+                    <script>
+                // Text to be displayed
+                const text = "Hi, I'm Reagan.I'm A Front-End Developer";
+                const messageElement = document.getElementById('welcome-message');
+                let index = 0;
+        
+                function displayText() {
+                    if (index < text.length) {
+                        messageElement.textContent += text.charAt(index);
+                        index++;
+                        setTimeout(displayText, 100); // Adjust the timeout for typing speed
+                    }
+                }
+        
+                // Start displaying the text when the page loads
+                window.onload = displayText;
+            </script>        
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="text-container">
+                <h2>About <span>Me</span></h2>
+                <p>Hi, I'm <span>Reagan, </span>a Front-End Developer.</p>
+            </div>
+            <div class="image-container">
+                <img src="./images/prof.JPG" alt="Image">
+            </div>
+    
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project">
+                <img src="images/project1.jpg" alt="Project 1">
+                <!-- Project 1 details -->
+            </div>
+            <div class="project">
+                <img src="images/project2.jpg" alt="Project 2">
+                <!-- Project 2 details -->
+            </div>
+            <div class="project">
+                <img src="images/project3.jpg" alt="Project 3">
+                <!-- Project 3 details -->
+            </div>
+            <div class="project">
+                <img src="images/project4.jpg" alt="Project 4">
+                <!-- Project 4 details -->
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <!-- Contact information goes here -->
+        <div class="contact-container">
+            <div class="contact-details">
+                <h2>Contact Details</h2>
+                <p><i class="fas fa-phone"></i> Phone: <a href="tel+254 769 107231" >+254 769 107231</a></p>
+                <p><i class="fas fa-envelope"></i> Email:<a href="mailto:reaganmsangia@gmail.com">reaganmsangia@gmail.com</a> </p>
+                <p><i class="fas fa-map-marker-alt"></i> Location: 123 Maseno, Kisumu, kenya</p>
+            </div>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <!------->
+    </section>
+    
+    <footer>
+        <footer class="green-footer">
+            <div class="centered-items">
+                <!--
+                <p>Item 1</p>
+                <p>Item 2</p>-->
+                &copy;  Copyright 2023
+            </div>
+        </footer>
+
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
